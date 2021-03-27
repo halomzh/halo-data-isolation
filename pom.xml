@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>halo-data-isolation</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>halo-data-isolation-starter-spring</module>
+        <module>halo-data-isolation-example</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <mybatis.spring.boot>2.1.4</mybatis.spring.boot>
+        <guava.version>30.1-jre</guava.version>
+        <commons.collections.version>3.2.2</commons.collections.version>
+        <servlet.api.version>2.5</servlet.api.version>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.3</version>
+        <relativePath/>
+    </parent>
+
+</project>

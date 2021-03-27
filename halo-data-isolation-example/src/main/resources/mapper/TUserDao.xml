@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.halo.data.isolation.example.dao.TUserDao">
+
+    <resultMap type="com.halo.data.isolation.example.entity.TUser" id="TUserMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="userName" column="user_name" jdbcType="VARCHAR"/>
+        <result property="email" column="email" jdbcType="VARCHAR"/>
+        <result property="location" column="location" jdbcType="VARCHAR"/>
+        <result property="tagA" column="tag_a" jdbcType="VARCHAR"/>
+        <result property="tagB" column="tag_b" jdbcType="VARCHAR"/>
+        <result property="tagC" column="tag_c" jdbcType="VARCHAR"/>
+    </resultMap>
+
+</mapper>
+
