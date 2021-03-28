@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * (TUser)实体类
  *
- * @author makejava
+ * @author shoufeng
  * @since 2021-03-28 00:03:05
  */
 public class TUser implements Serializable {

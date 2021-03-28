@@ -32,6 +32,11 @@ public class App {
 		SpringApplication.run(App.class, args);
 	}
 
+	/**
+	 * 数据拦截开启情况下，服务调用
+	 *
+	 * @return 查询结果
+	 */
 	@GetMapping("/get/1")
 	public Object get1() {
 		List<TUser> tUsers = tUserDao.selectAll();
@@ -39,6 +44,11 @@ public class App {
 		return tUsers;
 	}
 
+	/**
+	 * 利用DataIsolationContextUtils关闭数据隔离器
+	 *
+	 * @return 查询结果
+	 */
 	@GetMapping("/get/2")
 	public Object get2() {
 		DataIsolationContextUtils.quit();
@@ -47,6 +57,11 @@ public class App {
 		return tUsers;
 	}
 
+	/**
+	 * 对于指定代码块使用指定拦截信息
+	 *
+	 * @return 查询结果
+	 */
 	@GetMapping("/get/3")
 	public Object get3() {
 		DataIsolationInfo dataIsolationInfo = new DataIsolationInfo();
@@ -58,6 +73,11 @@ public class App {
 		return tUsers;
 	}
 
+	/**
+	 * 使用@DataIsolationContext判定该方法是否收数据隔离器管理，默认开启
+	 *
+	 * @return 查询结果
+	 */
 	@GetMapping("/get/4")
 	@DataIsolationContext
 	public Object get4() {
@@ -66,6 +86,11 @@ public class App {
 		return tUsers;
 	}
 
+	/**
+	 * 使用@DataIsolationContext主动排除该方法，该方法将不受数据隔离器管理
+	 *
+	 * @return 查询结果
+	 */
 	@GetMapping("/get/5")
 	@DataIsolationContext(enableDataIsolation = false)
 	public Object get5() {

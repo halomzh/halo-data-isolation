@@ -11,8 +11,8 @@ spring:
 halo:
   data:
     isolation:
-      enable: true
-      handler-interceptor-name: dataIsolationHandlerInterceptor
+      enable: true #是否开启数据隔离器
+      handler-interceptor-name: dataIsolationHandlerInterceptor #指定数据隔离拦截器名称
 
 
 mybatis:

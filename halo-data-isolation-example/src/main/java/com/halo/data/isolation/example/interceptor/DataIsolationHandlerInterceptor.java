@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 import javax.servlet.http.HttpServletRequest;
 
 /**
+ * 数据隔离拦截器，主要用于根据当前登陆人获取拦截信息
+ *
  * @author shoufeng
  */
 

@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * (TUser)表数据库访问层
  *
- * @author makejava
+ * @author shoufeng
  * @since 2021-03-28 00:03:06
  */
 
